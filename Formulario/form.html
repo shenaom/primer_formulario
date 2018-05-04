@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Formulario de Registro</title>
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
         <link rel="stylesheet" href="estilos.css">
@@ -19,10 +18,10 @@
                 <input class="form_input" type="email" name="mail" id="mail" required>
 
                 <label class="form_label" for="tel">Teléfono Movil:</label>
-                <input class="form_input" type="tel" list="none" name="tel" id="tel" required>
+                <input class="form_input" type="tel" list="none" name="tel" id="tel" >
 
                 <label class="form_label" for="pais">País:</label>
-                <select name="pais" class="form_input" >
+                <select name="pais" class="form_input" required>
                     <option value=""></option>
                     <option value="AF">Afganistán</option>
                     <option value="AL">Albania</option>
@@ -260,14 +259,13 @@
                     <option value="ZW">Zimbabue</option>
                     </select>
                 <label class="form_label" for="user">Usuario:</label>
-                <input class="form_input" type="text" name="user" id="user">
+                <input class="form_input" type="text" name="user" id="user" required>
 
                 <label class="form_label" for="pass">Contraseña:</label>
-                <input class="form_input" type="password" name="pass" id="pass">
+                <input class="form_input" type="password" name="pass" id="pass" required>
             </div>
             <center><input class="form_btn" type="submit" value="Registrar!"></center>
         </form>
         <script src="scripts.js"></script>
-        <!-- Este es un comentario -->
-</body>
+        </body>
 </html>
