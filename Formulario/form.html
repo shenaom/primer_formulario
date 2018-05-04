@@ -9,20 +9,20 @@
         <link rel="stylesheet" href="estilos.css">
     </head>
     <body>
-        <form class="form" action="#" method="post">
+        <form id= formulario class="form" action="registro.php" method="POST">
             <h1>Formulario de Registro</h1>
             <div class="caja">
                 <label class="form_label" for="nom">Nombre:</label>
-                <input class="form_input" type="text" name="nom" id="nom">
+                <input class="form_input" type="text" name="nom" id="nom" maxlength="40">
 
                 <label class="form_label" for="mail">Correo:</label>
-                <input class="form_input" type="email" name="mail" id="mail">
+                <input class="form_input" type="email" name="mail" id="mail" required>
 
-                <label class="form_label" for="tel">Teléfono:</label>
-                <input class="form_input" type="tel" list="none" name="tel" id="tel">
+                <label class="form_label" for="tel">Teléfono Movil:</label>
+                <input class="form_input" type="tel" list="none" name="tel" id="tel" required>
 
                 <label class="form_label" for="pais">País:</label>
-                <select name="pais" class="form_input" required>
+                <select name="pais" class="form_input" >
                     <option value=""></option>
                     <option value="AF">Afganistán</option>
                     <option value="AL">Albania</option>
